@@ -3,43 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Users</title>
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <header>
-      <h1>Simon<sup>&reg;</sup></h1>
+   <header style="background-color:powderblue;">
+      <h1>Users</h1>
 
       <nav>
         <menu>
           <li><a href="index.html">Home</a></li>
-          <li><a href="play.html">Play</a></li>
-          <li><a href="scores.html">Scores</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="to_do_list.html">To Do List</a></li>
+          <li><a href="account.html">My Account</a></li>
+          <li><a href="other_users.html">Friends</a></li>
         </menu>
       </nav>
 
-      <hr />
+      <hr/>
     </header>
 
-    <main>
-      <div id="picture" class="picture-box"><img width="400px" src="placeholder.jpg" alt="random" /></div>
-
-      <p>
-        Simon is a repetitive memory game where you follow the demonstrated color sequence until you make a mistake. The
-        longer the sequence you repeat, the greater your score.
-      </p>
-
-      <p>
-        The name Simon is a registered trademark of Milton-Bradley. Our use of the name and the game is for non-profit
-        educational use only. No part of this code or program should be used outside of that definition.
-      </p>
-
-      <div id="quote">
-        <div>Words are cheap. Show me the code.</div>
-        <div>- Linus Torvalds</div>
-      </div>
+    <main style="background-color: rgb(79, 139, 172);">
+      <table style="border: 2px solid black; border-collapse: collapse; width: 100%;">
+        <tr>
+          <th style="border: 2px solid black;">Username</th>
+          <th style="border: 2px solid black;">Name</th>
+          <th style="border: 2px solid black;">Events with user</th>
+          <th style="border: 2px solid black;">See Events</th>
+        </tr>
+        <tr>
+          <td style="border: 2px solid black;">Username1</td>
+          <td style="border: 2px solid black;">James</td>
+          <td style="border: 2px solid black;">1</td>
+          <td style="border: 2px solid black;"><button>Event(s)</button></td>
+        </tr>
+        <tr>
+          <td style="border: 2px solid black;">Username2</td>
+          <td style="border: 2px solid black;">Alex</td>
+          <td style="border: 2px solid black;">3</td>
+          <td style="border: 2px solid black;"><button>Event(s)</button></td>
+        </tr>
+        <tr>
+          <td style="border: 2px solid black;">Username3</td>
+          <td style="border: 2px solid black;">Miranda</td>
+          <td style="border: 2px solid black;">0</td>
+          <td style="border: 2px solid black;"><button>Event(s)</button></td>
+        </tr>
+        
+      </table>
     </main>
+
+    <p>
+      <b>Search for other users:</b>
+      <form>
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit">Go</button>
+      </form> 
+    </p>
 
     <footer>
       <hr />
